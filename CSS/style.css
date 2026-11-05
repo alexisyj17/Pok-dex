@@ -1,0 +1,169 @@
+:root {
+  --color-prinicpal: rgb(201, 20, 20);
+  --font-titulo: "Pixelify Sans";
+  --radio-bordes:15px;
+  --fondo-caja: rgba(230, 230, 230, 0.555);
+  --bordes-mini: 10px;
+}
+
+/*Todas las paginas*/
+html{
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  background-image: url(/Imagenes/Mapa\ Pokémon\ retro\ en\ píxeles.png);
+}
+
+header {
+  background: var(--color-prinicpal);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.icono {
+  height: 60px;
+  width: auto;
+}
+
+.logo>h1 {
+  font-size: 2.7em;
+  font-family: var(--font-titulo);
+  margin: 0;
+}
+
+nav {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  font-family: var(--font-titulo);
+}
+
+nav>ul>a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav>ul>a:hover {
+  background-color: rgb(174, 1, 1);
+  border-radius: 5px;
+}
+
+  h3, h2 {
+  font-family: var(--font-titulo);
+  font-size: 1.5em;
+}
+
+
+footer {
+  background: var(--color-prinicpal);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 6px black;
+}
+
+
+footer>p {
+  margin: 0;
+}
+
+
+main>section>article>p {
+  font-family: "Acme";
+  font-size: 1.1em;
+}
+
+/*Todas las paginas*/
+
+/*Index*/
+
+ol {
+  font-family: "Acme";
+  font-size: 1.1em;
+  background: #fff;
+  border-left: solid 5px var(--color-prinicpal);
+  border-radius: var(--bordes-mini);
+  box-shadow: 0 0 6px 0 #0009;
+}
+
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.caja-principal {
+  background: var(--fondo-caja);
+  border-radius: var(--radio-bordes);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 7px 0 #0009;
+}
+
+.imagen-kanto {
+  margin: 0;
+  width:100%;
+  height: 500px;
+  background-image: url(/Imagenes/700px-PE_Kanto_Map.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  border-radius: var(--radio-bordes);
+  box-shadow: 0 0 6px 0 #0009;
+}
+
+.opaco {
+  width: 100%;
+  height: 100%;
+  background: #0006;
+  border-radius: var(--radio-bordes);
+}
+
+.titulo-imagen {
+  margin: 0;
+  display: inline-block;
+  position: relative; top: 30px;
+  padding: 1rem;
+  font-size: 1.9em;
+  font-family: var(--font-titulo); color: #fff;
+  text-shadow: 1px 1px 10px #fff;
+}
+
+.caja-secundaria {
+  background: var(--fondo-caja);
+  margin-top: 1rem;
+  border-radius: var(--radio-bordes);
+  padding: 1rem;
+  box-shadow: 0 0 6px 0 #0009;
+}
+
+/*Fin de index*/
+
+
+

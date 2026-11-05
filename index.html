@@ -5,15 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Pixelify+Sans&display=swap" rel="stylesheet">
   <meta name="description" content="Web sobre Pokédex y Pokémon Rojo Fuego">
   <title>PokéWiki | Primera Generacion</title>
 </head>
 <body>
   <header>
-    <h1>PokéWiki</h1>
-    <img src="Imagenes/poke-ball.png" alt="Imagen de Pokéball">
-    <nav class="menu">
-      <ul>
+    <div class="logo">
+      <h1>PokéWiki</h1>
+      <img src="Imagenes/poke-ball.png" alt="Imagen de Pokéball" class="icono">
+    </div>
+
+    <nav>
+      <ul class="menu">
         <a href="wiki.html"><li>PokéDex</li></a>
         <a href="info.html"><li>Tarjetas</li></a>
         <a href="contacto.html" target="_blank"><li>Contacto</li></a>
@@ -21,13 +27,16 @@
     </nav>
   </header>
   <main>
-    <section class="contenido-principal">
+    <section>
       <article class= "caja-principal">
       <h2>Bienvenido a PokéWiki</h2>
       <p>Nustra página acerca de los <strong>pokémones</strong> mas icónicos e interesantes de la 1º generación del clasico Pokémon Rojo Fuego</p>
-      <h3>Recorreras La región de Kanto y descubriras las maravillas de ser el mejor entrenador Pokémon</h3>
-        <img id="Imagen-Kanto" src="/Imagenes/700px-PE_Kanto_Map.webp" alt="Mapa de la región de Kanto Pokemon Rojo Fuego" title="El mapa de la región de Kanto en Pokémon Rojo Fuego">
     </article>
+    <div class="imagen-kanto">
+      <div class="opaco">
+        <p class="titulo-imagen">Recorreras La región de Kanto y descubriras las maravillas de ser el mejor entrenador Pokémon</p>
+      </div>
+    </div>
     <article class="caja-secundaria">
       <h2>Pokémon Rojo Fuego</h2>
       <p>Pokémon Rojo Fuego es un remake de los Pokémon originales de 1996 (Rojo/Verde) para Game Boy Advance. Mantiene la historia clásica, pero con gráficos y mecánicas mejorados. Salió junto a su versión hermana, Verde Hoja.
@@ -48,10 +57,16 @@
     </section>
   </main>
   <footer>
-    <p><em>Imagen de Kanto, Proveniente del Juego Pokemon Rojo Fuego. Obtenida de la página https://bulbapedia.bulbagarden.net/wiki/Kanto</em></p>
-    <h3>Aviso legal y privacidad</h3>
-    <p> <em>Esta web es un proyecto educativo hecho por Alexis Torres para el módulo de Lenguajes de Marcas del ciclo DAW del IES Mar de Alborán. Es una web de fans, sin ánimo de lucro, y no tiene relación con Nintendo, Creatures Inc., GAME FREAK inc. ni The Pokémon Company. Pokémon y sus personajes son marcas y propiedad de sus respectivos dueños.</em></p>
-    <p>Cookies. Esta web no usa cookies ni herramientas de seguimiento.</p>
+    <div>
+      <p><em>Imagen de Kanto, Proveniente del Juego Pokemon Rojo Fuego. Obtenida de la página https://bulbapediabulbagarden.net/wiki/Kanto</em></p>
+    </div>
+
+    <div>
+      <h3>Aviso legal y privacidad</h3>
+      <p> <em>Esta web es un proyecto educativo hecho por Alexis Torres para el módulo de Lenguajes de Marcas del ciclo DAW del IES Mar de Alborán. Es una web de fans, sin ánimo de lucro, y no tiene relación con Nintendo, Creatures Inc., GAME FREAK inc. ni The Pokémon Company. Pokémon y sus personajes son marcas y propiedad de sus respectivos dueños.</em></p>
+      <p>Cookies. Esta web no usa cookies ni herramientas de seguimiento.</p>
+    </div>
+
   </footer>
 </body>
 </html>

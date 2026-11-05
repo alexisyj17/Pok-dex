@@ -5,24 +5,24 @@
     <link>https://www.pokewiki.com/</link>
     <description>Bienvenido a PokéWiki, la enciclopedia de Pokémon.</description>
     <language>es</language>
-    <lastBuildDate>Mon, 10 Jun 2024 12:00:00</lastBuildDate>
+    <lastBuildDate>Mon, 10 Jun 2026 12:00:00</lastBuildDate>
     <item>
       <title>Nuevo Pokémon: Snorlax</title>
       <link>https://www.pokewiki.com/snorlax</link>
       <description>Descubre a Snorlax, el Pokémon de tipo Normal.</description>
-      <pubDate>Mon, 2 Nov 2024 12:00:00</pubDate>
+      <pubDate>Mon, 2 Nov 2026 12:00:00</pubDate>
     </item>
     <item>
       <title>Actualización de la PokéDex</title>
       <link>https://www.pokewiki.com/pokedex</link>
       <description>Se han agregado nuevas entradas a la PokéDex.</description>
-      <pubDate>Wed, 5 Nov 2024 12:00:00</pubDate>
+      <pubDate>Wed, 5 Nov 2026 12:00:00</pubDate>
     </item>
     <item>
       <title>Evento Especial: Batalla de Entrenadores</title>
       <link>https://www.pokewiki.com/evento-batalla</link>
       <description>Participa en el evento especial de batalla de entrenadores.</description>
-      <pubDate>Fri, 7 Nov 2024 12:00:00</pubDate>
+      <pubDate>Fri, 7 Nov 2026 12:00:00</pubDate>
     </item>
   </channel>
 </rss>
