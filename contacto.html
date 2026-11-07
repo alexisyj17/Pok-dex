@@ -7,10 +7,10 @@
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Pixelify+Sans&display=swap" rel="stylesheet">
   <link rel="alternate" href="rss.xml" type="application/rss+xml" title="RSS Feed">
   <meta name="description" content="Web para contactar con el creador de la página web y enviar sugerencias o preguntas sobre la Pokédex y Pokémon Rojo Fuego">
-  <title>Contacto Pokédex | Sugerencias, Preguntas y Comentarios</title>
+  <title>Contacto Pokédex | Sugerencias, preguntas y comentarios</title>
 </head>
 <body>
   <header>
@@ -21,9 +21,9 @@
 
     <nav>
       <ul class="menu">
-        <a href="index.html"><li>Inicio</li></a>
-        <a href="wiki.html"><li>PokéDex</li></a>
-        <a href="info.html"><li>Tarjetas</li></a>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="wiki.html">Pokédex</a></li>
+        <li><a href="info.html">Tarjetas</a></li>
       </ul>
     </nav>
   </header>
@@ -31,47 +31,47 @@
     <section>
       <article>
         <h2>Envíanos tus sugerencias, preguntas y comentarios</h2>
-        <p>Queremos conocer tu opinión sobre la Pokédex y Pokémon Rojo Fuego. Iremos  actualizando continuamente la web y agregando nuevo contenido, nuevas generaciones y sus Pokémons. ¡Tu feedback es importante para nosotros!</p>
-        <p>Este formulario se envia a nuestro correo electrónico pokewiki_2026@gmail.com.</p>
+        <p>Queremos conocer tu opinión sobre la Pokédex y Pokémon Rojo Fuego. Iremos actualizando continuamente la web y agregando nuevo contenido y nuevas generaciones. ¡Tu opinión es importante para nosotros!</p>
+        <p>El formulario es demostrativo y necesita un servicio de servidor para procesar los datos; actualmente no está conectado.</p>
       </article>
-    <form action="/Enviar" method="get" class="formulario">
+    <form action="/Enviar" method="post" class="formulario">
       <fieldset>
         <legend>Nombre y Email</legend>
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required minlength="3">
+        <input type="text" id="nombre" name="nombre" autocomplete="name" required minlength="3">
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      </fieldset> 
+        <input type="email" id="email" name="email" autocomplete="email" required>
+      </fieldset>
 
       <fieldset>
         <legend>Mensaje</legend>
-        <label for="mensaje"></label>
+        <label for="mensaje">Escribe tu mensaje:</label>
         <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
       </fieldset>
 
-      <h3>¿Qué generación te gustaría que subamos en la Pokédex?</h3>
-      <label for="generacion">Selecciona una generación:</label>
-      <input type="radio" id="generacion1" name="generacion" value="primera">
-      <label for="generacion1">Primera Generación</label>
-      <input type="radio" id="generacion2" name="generacion" value="segunda">
-      <label for="generacion2">Segunda Generación</label>
-      <input type="radio" id="generacion3" name="generacion" value="tercera">
-      <label for="generacion3">Tercera Generación</label>
+      <fieldset>
+        <legend>¿Qué generación te gustaría que subamos en la Pokédex?</legend>
+        <input type="radio" id="generacion1" name="generacion" value="primera">
+        <label for="generacion1">Primera Generación</label>
+        <input type="radio" id="generacion2" name="generacion" value="segunda">
+        <label for="generacion2">Segunda Generación</label>
+        <input type="radio" id="generacion3" name="generacion" value="tercera">
+        <label for="generacion3">Tercera Generación</label>
+      </fieldset>
 
-      
-      <h3>¿Qué funcionalidades te gustaría ver en la Pokédex?</h3>
-      <label for="funcionalidades">Selecciona las funcionalidades que te gustaría ver:</label>
-      <input type="checkbox" id="funcionalidad1" name="funcionalidades" value="busqueda-avanzada">
-      <label for="funcionalidad1">Búsqueda avanzada</label>
-      <input type="checkbox" id="funcionalidad2" name="funcionalidades" value="filtros">
-      <label for="funcionalidad2">Filtros</label>
-      <input type="checkbox" id="funcionalidad3" name="funcionalidades" value="comparacion">
-      <label for="funcionalidad3">Comparación</label>
-      <input type="checkbox" id="funcionalidad4" name="funcionalidades" value="estadisticas">
-      <label for="funcionalidad4">Estadísticas</label>
-      <br>
-      <input type="submit" value="Enviar">
+      <fieldset>
+        <legend>¿Qué funcionalidades te gustaría ver en la Pokédex?</legend>
+        <input type="checkbox" id="funcionalidad1" name="funcionalidades[]" value="busqueda-avanzada">
+        <label for="funcionalidad1">Búsqueda avanzada</label>
+        <input type="checkbox" id="funcionalidad2" name="funcionalidades[]" value="filtros">
+        <label for="funcionalidad2">Filtros</label>
+        <input type="checkbox" id="funcionalidad3" name="funcionalidades[]" value="comparacion">
+        <label for="funcionalidad3">Comparación</label>
+        <input type="checkbox" id="funcionalidad4" name="funcionalidades[]" value="estadisticas">
+        <label for="funcionalidad4">Estadísticas</label>
+      </fieldset>
+      <button type="submit">Enviar</button>
     </form>
 
     <h3>¡Muchas gracias por tu feedback!</h3>
@@ -81,11 +81,10 @@
   <footer>
     <p>Todas las imágenes son de Pokémon © Nintendo / Creatures Inc. / GAME FREAK inc. Obtenidas del repositorio PokeAPI/sprites (github.com/PokeAPI/sprites). Uso educativo, sin ánimo de lucro.</p>
     <h3>Canal de noticias RSS</h3>
-    <p><a href="rss.xml" target="_blank">Suscríbete al canal RSS</a></p>
+    <p><a href="rss.xml">Suscríbete al canal RSS</a></p>
     <h3>Aviso legal y privacidad</h3>
     <p> <em>Esta web es un proyecto educativo hecho por Alexis Torres para el módulo de Lenguajes de Marcas del ciclo DAW del IES Mar de Alborán. Es una web de fans, sin ánimo de lucro, y no tiene relación con Nintendo, Creatures Inc., GAME FREAK inc. ni The Pokémon Company. Pokémon y sus personajes son marcas y propiedad de sus respectivos dueños.</em></p>
-    <p><em>Los datos del formulario no se envían ni se guardan en ningún sitio. Esta web no usa cookies propias.</em></p>
-    <p>Cookies. Esta web no usa cookies ni herramientas de seguimiento.</p>
+    <p><em>Esta web no procesa ni almacena los datos del formulario, y no usa cookies ni herramientas de seguimiento.</em></p>
   </footer>
 </body>
 </html>

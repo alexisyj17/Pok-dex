@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wiki Primera Generacion |  Informacion Pokémons</title>
+  <title>Wiki de la primera generación | Información Pokémon</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Pixelify+Sans&display=swap" rel="stylesheet">
   <meta name="description" content="Wiki sobre la primera generación de Pokémons">
 </head>
 <body>
@@ -20,25 +20,31 @@
 
     <nav>
       <ul class="menu">
-        <a href="index.html"><li>Inicio</li></a>
-        <a href="info.html"><li>Tarjetas</li></a>
-        <a href="contacto.html" target="_blank"><li>Contacto</li></a>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="info.html">Tarjetas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    <section class="Pokemons-inciciales">
+  <div class="wiki-layout">
+  <main id="principio">
+    <section class="pokemons">
+
           <h2>Tu Primer Pokémon</h2>
-      <article class="pokemon">
-        <h3>Bulbasaur</h3>
-        <figure>
-          <img src="Imagenes/1.gif" alt="Gif de Bulbasaur" title="Bulbasaur">
+          <p>El profesor Oak es el responsable de entregar los Pokémon iniciales a los entrenadores.</p>
+
+      <div class="pokemons-iniciales">
+        <article class="verde">
+          <h3>Bulbasaur</h3>
+          <figure>
+            <img src="Imagenes/1.gif" alt="Gif de Bulbasaur" title="Bulbasaur">
           <figcaption>#001</figcaption>
-        </figure>
-        <p><span>Planta</span></p>
-        <p><span>Veneno</span></p>
+          </figure>
+          <p><span>Planta</span></p>
+          <p><span>Veneno</span></p>
       </article>
-      <article class="pokemon">
+
+      <article class="rojo">
         <h3>Charmander</h3>
         <figure>
           <img src="Imagenes/4.gif" alt="Gif de Charmander" title="Charmander">
@@ -46,7 +52,8 @@
         </figure>
         <p><span>Fuego</span></p>
       </article>
-      <article class="pokemon">
+
+      <article class="azul">
         <h3>Squirtle</h3>
         <figure>
           <img src="Imagenes/7.gif" alt="Gif de Squirtle" title="Squirtle">
@@ -54,958 +61,950 @@
         </figure>
         <p><span>Agua</span></p>
       </article>
-      <article class="descripcion">
-        <p>El profesor Oak es el responsable de entregar los Pokémon iniciales a los entrenadores.</p>
-      </article>
-    </section>
-    <section class="pokemons-secundarios">
-      <h2>Lista de Pokémons de Kanto</h2>
-      <article class="tabla-pokemons">
+      </div>
+
+
+
+      <div class="tabla">
+        <article>
+          <h2>Lista de Pokémons de Kanto</h2>
         <!--Inicia la tabla-->
-        <table>
-          <caption>Lista de Pokémons de Kanto</caption>
+          <div class="efecto-pantalla">
+          <table>
+          <caption>Pokédex</caption>
           <thead>
             <tr>
               <th>Imagen</th>
-              <th>Nombre</th>
+              <th >Nombre</th>
               <th>Tipo</th>
-              <th>Nº Pokedex</th>
+              <th>N.º Pokédex</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td><img src="Imagenes/1.png" alt="Imagen de Bulbasaur" title="Bulbasaur"></td>
               <td>Bulbasaur</td>
-              <td>Planta / Veneno</td>
+              <td><span class="tipo tipo-planta">Planta</span> / <span class="tipo tipo-veneno">Veneno</span></td>
               <td>#001</td>
             </tr>
             <tr>
               <td><img src="Imagenes/2.png" alt="Imagen de Ivysaur" title="Ivysaur"></td>
               <td>Ivysaur</td>
-              <td>Planta / Veneno</td>
+              <td><span class="tipo tipo-planta">Planta</span> / <span class="tipo tipo-veneno">Veneno</span></td>
               <td>#002</td>
             </tr>
             <tr>
               <td><img src="Imagenes/3.png" alt="Imagen de Venusaur" title="Venusaur"></td>
               <td>Venusaur</td>
-              <td>Planta / Veneno</td>
+              <td><span class="tipo tipo-planta">Planta</span> / <span class="tipo tipo-veneno">Veneno</span></td>
               <td>#003</td>
             </tr>
             <tr>
               <td><img src="Imagenes/4.png" alt="Imagen de Charmander" title="Charmander"></td>
               <td>Charmander</td>
-              <td>Fuego</td>
+              <td><span class="tipo tipo-fuego">Fuego</span></td>
               <td>#004</td>
             </tr>
             <tr>
               <td><img src="Imagenes/5.png" alt="Imagen de Charmeleon" title="Charmeleon"></td>
               <td>Charmeleon</td>
-              <td>Fuego</td>
+              <td><span class="tipo tipo-fuego">Fuego</span></td>
               <td>#005</td>
             </tr>
             <tr>
               <td><img src="Imagenes/6.png" alt="Imagen de Charizard" title="Charizard"></td>
               <td>Charizard</td>
-              <td>Fuego / Volador</td>
+              <td><span class="tipo tipo-fuego">Fuego</span> / <span class="tipo tipo-volador">Volador</span></td>
               <td>#006</td>
             </tr>
             <tr>
               <td><img src="Imagenes/7.png" alt="Imagen de Squirtle" title="Squirtle"></td>
               <td>Squirtle</td>
-              <td>Agua</td>
+              <td><span class="tipo tipo-agua">Agua</span></td>
               <td>#007</td>
             </tr>
             <tr>
               <td><img src="Imagenes/8.png" alt="Imagen de Wartortle" title="Wartortle"></td>
               <td>Wartortle</td>
-              <td>Agua</td>
+              <td><span class="tipo tipo-agua">Agua</span></td>
               <td>#008</td>
             </tr>
             <tr>
               <td><img src="Imagenes/9.png" alt="Imagen de Blastoise" title="Blastoise"></td>
               <td>Blastoise</td>
-              <td>Agua</td>
+              <td><span class="tipo tipo-agua">Agua</span></td>
               <td>#009</td>
             </tr>
             <tr>
               <td><img src="Imagenes/10.png" alt="Imagen de Caterpie" title="Caterpie"></td>
               <td>Caterpie</td>
-              <td>Bicho</td>
+              <td><span class="tipo tipo-bicho">Bicho</span></td>
               <td>#010</td>
             </tr>
             <tr>
               <td><img src="Imagenes/11.png" alt="Imagen de Metapod" title="Metapod"></td>
               <td>Metapod</td>
-              <td>Bicho</td>
+              <td><span class="tipo tipo-bicho">Bicho</span></td>
               <td>#011</td>
             </tr>
             <tr>
               <td><img src="Imagenes/12.png" alt="Imagen de Butterfree" title="Butterfree"></td>
               <td>Butterfree</td>
-              <td>Bicho / Volador</td>
+              <td><span class="tipo tipo-bicho">Bicho</span> / <span class="tipo tipo-volador">Volador</span></td>
               <td>#012</td>
             </tr>
             <tr>
               <td><img src="Imagenes/13.png" alt="Imagen de Weedle" title="Weedle"></td>
               <td>Weedle</td>
-              <td>Bicho / Veneno</td>
+              <td><span class="tipo tipo-bicho">Bicho</span> / <span class="tipo tipo-veneno">Veneno</span></td>
               <td>#013</td>
             </tr>
             <tr>
               <td><img src="Imagenes/14.png" alt="Imagen de Kakuna" title="Kakuna"></td>
               <td>Kakuna</td>
-              <td>Bicho / Veneno</td>
+              <td><span class="tipo tipo-bicho">Bicho</span> / <span class="tipo tipo-veneno">Veneno</span></td>
               <td>#014</td>
             </tr>
             <tr>
               <td><img src="Imagenes/15.png" alt="Imagen de Beedrill" title="Beedrill"></td>
               <td>Beedrill</td>
-              <td>Bicho / Veneno</td>
+              <td><span class="tipo tipo-bicho">Bicho</span> / <span class="tipo tipo-veneno">Veneno</span></td>
               <td>#015</td>
             </tr>
             <tr>
               <td><img src="Imagenes/16.png" alt="Imagen de Pidgey" title="Pidgey"></td>
               <td>Pidgey</td>
-              <td>Normal / Volador</td>
+              <td><span class="tipo tipo-normal">Normal</span> / <span class="tipo tipo-volador">Volador</span></td>
               <td>#016</td>
             </tr>
             <tr>
               <td><img src="Imagenes/17.png" alt="Imagen de Pidgeotto" title="Pidgeotto"></td>
               <td>Pidgeotto</td>
-              <td>Normal / Volador</td>
+              <td><span class="tipo tipo-normal">Normal</span> / <span class="tipo tipo-volador">Volador</span></td>
               <td>#017</td>
             </tr>
             <tr>
               <td><img src="Imagenes/18.png" alt="Imagen de Pidgeot" title="Pidgeot"></td>
               <td>Pidgeot</td>
-              <td>Normal / Volador</td>
+              <td><span class="tipo tipo-normal">Normal</span> / <span class="tipo tipo-volador">Volador</span></td>
               <td>#018</td>
             </tr>
             <tr>
               <td><img src="Imagenes/19.png" alt="Imagen de Rattata" title="Rattata"></td>
               <td>Rattata</td>
-              <td>Normal</td>
+              <td><span class="tipo tipo-normal">Normal</span></td>
               <td>#019</td>
             </tr>
             <tr>
               <td><img src="Imagenes/20.png" alt="Imagen de Raticate" title="Raticate"></td>
               <td>Raticate</td>
-              <td>Normal</td>
+              <td><span class="tipo tipo-normal">Normal</span></td>
               <td>#020</td>
             </tr>
             <tr>
               <td><img src="Imagenes/21.png" alt="Imagen de Spearow" title="Spearow"></td>
               <td>Spearow</td>
-              <td>Normal / Volador</td>
+              <td><span class="tipo tipo-normal">Normal</span> / <span class="tipo tipo-volador">Volador</span></td>
               <td>#021</td>
             </tr>
             <tr>
               <td><img src="Imagenes/22.png" alt="Imagen de Fearow" title="Fearow"></td>
               <td>Fearow</td>
-              <td>Normal / Volador</td>
+              <td><span class="tipo tipo-normal">Normal</span> / <span class="tipo tipo-volador">Volador</span></td>
               <td>#022</td>
             </tr>
             <tr>
               <td><img src="Imagenes/23.png" alt="Imagen de Ekans" title="Ekans"></td>
               <td>Ekans</td>
-              <td>Veneno</td>
+              <td><span class="tipo tipo-veneno">Veneno</span></td>
               <td>#023</td>
             </tr>
             <tr>
               <td><img src="Imagenes/24.png" alt="Imagen de Arbok" title="Arbok"></td>
               <td>Arbok</td>
-              <td>Veneno</td>
+              <td><span class="tipo tipo-veneno">Veneno</span></td>
               <td>#024</td>
             </tr>
             <tr>
               <td><img src="Imagenes/25.png" alt="Imagen de Pikachu" title="Pikachu"></td>
               <td>Pikachu</td>
-              <td>Eléctrico</td>
+              <td><span class="tipo tipo-electrico">Eléctrico</span></td>
               <td>#025</td>
             </tr>
             <tr>
               <td><img src="Imagenes/26.png" alt="Imagen de Raichu" title="Raichu"></td>
               <td>Raichu</td>
-              <td>Eléctrico</td>
+              <td><span class="tipo tipo-electrico">Eléctrico</span></td>
               <td>#026</td>
             </tr>
             <tr>
               <td><img src="Imagenes/27.png" alt="Imagen de Sandshrew" title="Sandshrew"></td>
               <td>Sandshrew</td>
-              <td>Tierra</td>
+              <td><span class="tipo tipo-tierra">Tierra</span></td>
               <td>#027</td>
             </tr>
             <tr>
               <td><img src="Imagenes/28.png" alt="Imagen de Sandslash" title="Sandslash"></td>
               <td>Sandslash</td>
-              <td>Tierra</td>
+              <td><span class="tipo tipo-tierra">Tierra</span></td>
               <td>#028</td>
             </tr>
             <tr>
               <td><img src="Imagenes/29.png" alt="Imagen de Nidoran♀" title="Nidoran♀"></td>
               <td>Nidoran♀</td>
-              <td>Veneno</td>
+              <td><span class="tipo tipo-veneno">Veneno</span></td>
               <td>#029</td>
             </tr>
             <tr>
               <td><img src="Imagenes/30.png" alt="Imagen de Nidorina" title="Nidorina"></td>
               <td>Nidorina</td>
-              <td>Veneno</td>
+              <td><span class="tipo tipo-veneno">Veneno</span></td>
               <td>#030</td>
             </tr>
             <tr>
               <td><img src="Imagenes/31.png" alt="Imagen de Nidoqueen" title="Nidoqueen"></td>
               <td>Nidoqueen</td>
-              <td>Veneno / Tierra</td>
+              <td><span class="tipo tipo-veneno">Veneno</span> / <span class="tipo tipo-tierra">Tierra</span></td>
               <td>#031</td>
             </tr>
             <tr>
               <td><img src="Imagenes/32.png" alt="Imagen de Nidoran♂" title="Nidoran♂"></td>
               <td>Nidoran♂</td>
-              <td>Veneno</td>
+              <td><span class="tipo tipo-veneno">Veneno</span></td>
               <td>#032</td>
             </tr>
             <tr>
               <td><img src="Imagenes/33.png" alt="Imagen de Nidorino" title="Nidorino"></td>
               <td>Nidorino</td>
-              <td>Veneno</td>
+              <td><span class="tipo tipo-veneno">Veneno</span></td>
               <td>#033</td>
             </tr>
             <tr>
               <td><img src="Imagenes/34.png" alt="Imagen de Nidoking" title="Nidoking"></td>
               <td>Nidoking</td>
-              <td>Veneno / Tierra</td>
+              <td><span class="tipo tipo-veneno">Veneno</span> / <span class="tipo tipo-tierra">Tierra</span></td>
               <td>#034</td>
             </tr>
             <tr>
               <td><img src="Imagenes/35.png" alt="Imagen de Clefairy" title="Clefairy"></td>
               <td>Clefairy</td>
-              <td>Hada</td>
+              <td><span class="tipo tipo-hada">Hada</span></td>
               <td>#035</td>
             </tr>
             <tr>
               <td><img src="Imagenes/36.png" alt="Imagen de Clefable" title="Clefable"></td>
               <td>Clefable</td>
-              <td>Hada</td>
+              <td><span class="tipo tipo-hada">Hada</span></td>
               <td>#036</td>
             </tr>
             <tr>
               <td><img src="Imagenes/37.png" alt="Imagen de Vulpix" title="Vulpix"></td>
               <td>Vulpix</td>
-              <td>Fuego</td>
+              <td><span class="tipo tipo-fuego">Fuego</span></td>
               <td>#037</td>
             </tr>
             <tr>
               <td><img src="Imagenes/38.png" alt="Imagen de Ninetales" title="Ninetales"></td>
               <td>Ninetales</td>
-              <td>Fuego</td>
+              <td><span class="tipo tipo-fuego">Fuego</span></td>
               <td>#038</td>
             </tr>
             <tr>
               <td><img src="Imagenes/39.png" alt="Imagen de Jigglypuff" title="Jigglypuff"></td>
               <td>Jigglypuff</td>
-              <td>Normal / Hada</td>
+              <td><span class="tipo tipo-normal">Normal</span> / <span class="tipo tipo-hada">Hada</span></td>
               <td>#039</td>
             </tr>
             <tr>
               <td><img src="Imagenes/40.png" alt="Imagen de Wigglytuff" title="Wigglytuff"></td>
               <td>Wigglytuff</td>
-              <td>Normal / Hada</td>
+              <td><span class="tipo tipo-normal">Normal</span> / <span class="tipo tipo-hada">Hada</span></td>
               <td>#040</td>
             </tr>
             <tr>
               <td><img src="Imagenes/41.png" alt="Imagen de Zubat" title="Zubat"></td>
               <td>Zubat</td>
-              <td>Veneno / Volador</td>
+              <td><span class="tipo tipo-veneno">Veneno</span> / <span class="tipo tipo-volador">Volador</span></td>
               <td>#041</td>
             </tr>
             <tr>
               <td><img src="Imagenes/42.png" alt="Imagen de Golbat" title="Golbat"></td>
               <td>Golbat</td>
-              <td>Veneno / Volador</td>
+              <td><span class="tipo tipo-veneno">Veneno</span> / <span class="tipo tipo-volador">Volador</span></td>
               <td>#042</td>
             </tr>
             <tr>
               <td><img src="Imagenes/43.png" alt="Imagen de Oddish" title="Oddish"></td>
               <td>Oddish</td>
-              <td>Planta / Veneno</td>
+              <td><span class="tipo tipo-planta">Planta</span> / <span class="tipo tipo-veneno">Veneno</span></td>
               <td>#043</td>
             </tr>
             <tr>
               <td><img src="Imagenes/44.png" alt="Imagen de Gloom" title="Gloom"></td>
               <td>Gloom</td>
-              <td>Planta / Veneno</td>
+              <td><span class="tipo tipo-planta">Planta</span> / <span class="tipo tipo-veneno">Veneno</span></td>
               <td>#044</td>
             </tr>
             <tr>
               <td><img src="Imagenes/45.png" alt="Imagen de Vileplume" title="Vileplume"></td>
               <td>Vileplume</td>
-              <td>Planta / Veneno</td>
+              <td><span class="tipo tipo-planta">Planta</span> / <span class="tipo tipo-veneno">Veneno</span></td>
               <td>#045</td>
             </tr>
             <tr>
               <td><img src="Imagenes/46.png" alt="Imagen de Paras" title="Paras"></td>
               <td>Paras</td>
-              <td>Bicho / Planta</td>
+              <td><span class="tipo tipo-bicho">Bicho</span> / <span class="tipo tipo-planta">Planta</span></td>
               <td>#046</td>
             </tr>
             <tr>
               <td><img src="Imagenes/47.png" alt="Imagen de Parasect" title="Parasect"></td>
               <td>Parasect</td>
-              <td>Bicho / Planta</td>
+              <td><span class="tipo tipo-bicho">Bicho</span> / <span class="tipo tipo-planta">Planta</span></td>
               <td>#047</td> 
             </tr>
             <tr>
               <td><img src="Imagenes/48.png" alt="Imagen de Venonat" title="Venonat"></td>
               <td>Venonat</td>
-              <td>Bicho / Veneno</td>
+              <td><span class="tipo tipo-bicho">Bicho</span> / <span class="tipo tipo-veneno">Veneno</span></td>
               <td>#048</td>
             </tr>
             <tr>
               <td><img src="Imagenes/49.png" alt="Imagen de Venomoth" title="Venomoth"></td>
               <td>Venomoth</td>
-              <td>Bicho / Veneno</td>
+              <td><span class="tipo tipo-bicho">Bicho</span> / <span class="tipo tipo-veneno">Veneno</span></td>
               <td>#049</td>
             </tr>
             <tr>
               <td><img src="Imagenes/50.png" alt="Imagen de Diglett" title="Diglett"></td>
               <td>Diglett</td>
-              <td>Tierra</td>
+              <td><span class="tipo tipo-tierra">Tierra</span></td>
               <td>#050</td>
             </tr>
             <tr>
               <td><img src="Imagenes/51.png" alt="Imagen de Dugtrio" title="Dugtrio"></td>
               <td>Dugtrio</td>
-              <td>Tierra</td>
+              <td><span class="tipo tipo-tierra">Tierra</span></td>
               <td>#051</td>
             </tr>
             <tr>
               <td><img src="Imagenes/52.png" alt="Imagen de Meowth" title="Meowth"></td>
               <td>Meowth</td>
-              <td>Normal</td>
+              <td><span class="tipo tipo-normal">Normal</span></td>
               <td>#052</td>
             </tr>
             <tr>
               <td><img src="Imagenes/53.png" alt="Imagen de Persian" title="Persian"></td>
               <td>Persian</td>
-              <td>Normal</td>
+              <td><span class="tipo tipo-normal">Normal</span></td>
               <td>#053</td> 
             </tr>
             <tr>
               <td><img src="Imagenes/54.png" alt="Imagen de Psyduck" title="Psyduck"></td>
               <td>Psyduck</td>
-              <td>Agua</td>
+              <td><span class="tipo tipo-agua">Agua</span></td>
               <td>#054</td>
             </tr>
             <tr>
               <td><img src="Imagenes/55.png" alt="Imagen de Golduck" title="Golduck"></td>
               <td>Golduck</td>
-              <td>Agua</td>
+              <td><span class="tipo tipo-agua">Agua</span></td>
               <td>#055</td>
             </tr>
             <tr>
               <td><img src="Imagenes/56.png" alt="Imagen de Mankey" title="Mankey"></td>
               <td>Mankey</td>
-              <td>Lucha</td>
+              <td><span class="tipo tipo-lucha">Lucha</span></td>
               <td>#056</td>
             </tr>
             <tr>
               <td><img src="Imagenes/57.png" alt="Imagen de Primeape" title="Primeape"></td>
               <td>Primeape</td>
-              <td>Lucha</td>
+              <td><span class="tipo tipo-lucha">Lucha</span></td>
               <td>#057</td>
             </tr>
             <tr>
               <td><img src="Imagenes/58.png" alt="Imagen de Growlithe" title="Growlithe"></td>
               <td>Growlithe</td>
-              <td>Fuego</td>
+              <td><span class="tipo tipo-fuego">Fuego</span></td>
               <td>#058</td>
             </tr>
             <tr>
               <td><img src="Imagenes/59.png" alt="Imagen de Arcanine" title="Arcanine"></td>
               <td>Arcanine</td>
-              <td>Fuego</td>
+              <td><span class="tipo tipo-fuego">Fuego</span></td>
               <td>#059</td>
             </tr>
             <tr>
               <td><img src="Imagenes/60.png" alt="Imagen de Poliwag" title="Poliwag"></td>
               <td>Poliwag</td>
-              <td>Agua</td>
+              <td><span class="tipo tipo-agua">Agua</span></td>
               <td>#060</td>
             </tr>
             <tr>
               <td><img src="Imagenes/61.png" alt="Imagen de Poliwhirl" title="Poliwhirl"></td>
               <td>Poliwhirl</td>
-              <td>Agua</td>
+              <td><span class="tipo tipo-agua">Agua</span></td>
               <td>#061</td> 
             </tr>
             <tr>
               <td><img src="Imagenes/62.png" alt="Imagen de Poliwrath" title="Poliwrath"></td>
               <td>Poliwrath</td>
-              <td>Agua / Lucha</td>
+              <td><span class="tipo tipo-agua">Agua</span> / <span class="tipo tipo-lucha">Lucha</span></td>
               <td>#062</td>
             </tr>
             <tr>
               <td><img src="Imagenes/63.png" alt="Imagen de Abra" title="Abra"></td>
               <td>Abra</td>
-              <td>Psíquico</td>
+              <td><span class="tipo tipo-psiquico">Psíquico</span></td>
               <td>#063</td>
             </tr>
             <tr>
               <td><img src="Imagenes/64.png" alt="Imagen de Kadabra" title="Kadabra"></td>
               <td>Kadabra</td>
-              <td>Psíquico</td>
+              <td><span class="tipo tipo-psiquico">Psíquico</span></td>
               <td>#064</td>
             </tr>
             <tr>
               <td><img src="Imagenes/65.png" alt="Imagen de Alakazam" title="Alakazam"></td>
               <td>Alakazam</td>
-              <td>Psíquico</td>
+              <td><span class="tipo tipo-psiquico">Psíquico</span></td>
               <td>#065</td>
             </tr>
             <tr>
               <td><img src="Imagenes/66.png" alt="Imagen de Machop" title="Machop"></td>
               <td>Machop</td>
-              <td>Lucha</td>
+              <td><span class="tipo tipo-lucha">Lucha</span></td>
               <td>#066</td> 
             </tr>
             <tr>
               <td><img src="Imagenes/67.png" alt="Imagen de Machoke" title="Machoke"></td>
               <td>Machoke</td>
-              <td>Lucha</td>
+              <td><span class="tipo tipo-lucha">Lucha</span></td>
               <td>#067</td>
             </tr>
             <tr>
               <td><img src="Imagenes/68.png" alt="Imagen de Machamp" title="Machamp"></td>
               <td>Machamp</td>
-              <td>Lucha</td>
+              <td><span class="tipo tipo-lucha">Lucha</span></td>
               <td>#068</td>
             </tr>
             <tr>
               <td><img src="Imagenes/69.png" alt="Imagen de Bellsprout" title="Bellsprout"></td>
               <td>Bellsprout</td>
-              <td>Planta / Veneno</td>
+              <td><span class="tipo tipo-planta">Planta</span> / <span class="tipo tipo-veneno">Veneno</span></td>
               <td>#069</td>
             </tr>
             <tr>
               <td><img src="Imagenes/70.png" alt="Imagen de Weepinbell" title="Weepinbell"></td>
               <td>Weepinbell</td>
-              <td>Planta / Veneno</td>
+              <td><span class="tipo tipo-planta">Planta</span> / <span class="tipo tipo-veneno">Veneno</span></td>
               <td>#070</td>
             </tr>
             <tr>
               <td><img src="Imagenes/71.png" alt="Imagen de Victreebel" title="Victreebel"></td>
               <td>Victreebel</td>
-              <td>Planta / Veneno</td>
+              <td><span class="tipo tipo-planta">Planta</span> / <span class="tipo tipo-veneno">Veneno</span></td>
               <td>#071</td>
             </tr>
             <tr>
               <td><img src="Imagenes/72.png" alt="Imagen de Tentacool" title="Tentacool"></td>
               <td>Tentacool</td>
-              <td>Agua / Veneno</td>
+              <td><span class="tipo tipo-agua">Agua</span> / <span class="tipo tipo-veneno">Veneno</span></td>
               <td>#072</td>
             </tr>
             <tr>
               <td><img src="Imagenes/73.png" alt="Imagen de Tentacruel" title="Tentacruel"></td>
               <td>Tentacruel</td>
-              <td>Agua / Veneno</td>
+              <td><span class="tipo tipo-agua">Agua</span> / <span class="tipo tipo-veneno">Veneno</span></td>
               <td>#073</td>
             </tr>
             <tr>
               <td><img src="Imagenes/74.png" alt="Imagen de Geodude" title="Geodude"></td>
               <td>Geodude</td>
-              <td>Roca / Tierra</td>
+              <td><span class="tipo tipo-roca">Roca</span> / <span class="tipo tipo-tierra">Tierra</span></td>
               <td>#074</td>
             </tr>
             <tr>
               <td><img src="Imagenes/75.png" alt="Imagen de Graveler" title="Graveler"></td>
               <td>Graveler</td>
-              <td>Roca / Tierra</td>
+              <td><span class="tipo tipo-roca">Roca</span> / <span class="tipo tipo-tierra">Tierra</span></td>
               <td>#075</td>
             </tr>
             <tr>
               <td><img src="Imagenes/76.png" alt="Imagen de Golem" title="Golem"></td>
               <td>Golem</td>
-              <td>Roca / Tierra</td>
+              <td><span class="tipo tipo-roca">Roca</span> / <span class="tipo tipo-tierra">Tierra</span></td>
               <td>#076</td>
             </tr>
             <tr>
               <td><img src="Imagenes/77.png" alt="Imagen de Ponyta" title="Ponyta"></td>
               <td>Ponyta</td>
-              <td>Fuego</td>
+              <td><span class="tipo tipo-fuego">Fuego</span></td>
               <td>#077</td>
             </tr>
             <tr>
               <td><img src="Imagenes/78.png" alt="Imagen de Rapidash" title="Rapidash"></td>
               <td>Rapidash</td>
-              <td>Fuego</td>
+              <td><span class="tipo tipo-fuego">Fuego</span></td>
               <td>#078</td>
             </tr>
             <tr>
               <td><img src="Imagenes/79.png" alt="Imagen de Slowpoke" title="Slowpoke"></td>
               <td>Slowpoke</td>
-              <td>Agua / Psíquico</td>
+              <td><span class="tipo tipo-agua">Agua</span> / <span class="tipo tipo-psiquico">Psíquico</span></td>
               <td>#079</td>
             </tr>
             <tr>
               <td><img src="Imagenes/80.png" alt="Imagen de Slowbro" title="Slowbro"></td>
               <td>Slowbro</td>
-              <td>Agua / Psíquico</td>
+              <td><span class="tipo tipo-agua">Agua</span> / <span class="tipo tipo-psiquico">Psíquico</span></td>
               <td>#080</td>
             </tr>
             <tr>
               <td><img src="Imagenes/81.png" alt="Imagen de Magnemite" title="Magnemite"></td>
               <td>Magnemite</td>
-              <td>Eléctrico / Acero</td>
+              <td><span class="tipo tipo-electrico">Eléctrico</span> / <span class="tipo tipo-acero">Acero</span></td>
               <td>#081</td>
             </tr>
             <tr>
               <td><img src="Imagenes/82.png" alt="Imagen de Magneton" title="Magneton"></td>
               <td>Magneton</td>
-              <td>Eléctrico / Acero</td>
+              <td><span class="tipo tipo-electrico">Eléctrico</span> / <span class="tipo tipo-acero">Acero</span></td>
               <td>#082</td>
             </tr>
             <tr>
               <td><img src="Imagenes/83.png" alt="Imagen de Farfetch'd" title="Farfetch'd"></td>
               <td>Farfetch'd</td>
-              <td>Normal / Volador</td>
+              <td><span class="tipo tipo-normal">Normal</span> / <span class="tipo tipo-volador">Volador</span></td>
               <td>#083</td>
             </tr>
             <tr>
               <td><img src="Imagenes/84.png" alt="Imagen de Doduo" title="Doduo"></td>
               <td>Doduo</td>
-              <td>Normal / Volador</td>
+              <td><span class="tipo tipo-normal">Normal</span> / <span class="tipo tipo-volador">Volador</span></td>
               <td>#084</td>
             </tr>
             <tr>
               <td><img src="Imagenes/85.png" alt="Imagen de Dodrio" title="Dodrio"></td>
               <td>Dodrio</td>
-              <td>Normal / Volador</td>
+              <td><span class="tipo tipo-normal">Normal</span> / <span class="tipo tipo-volador">Volador</span></td>
               <td>#085</td>
             </tr>
             <tr>
               <td><img src="Imagenes/86.png" alt="Imagen de Seel" title="Seel"></td>
               <td>Seel</td>
-              <td>Agua</td>
+              <td><span class="tipo tipo-agua">Agua</span></td>
               <td>#086</td>
             </tr>
             <tr>
               <td><img src="Imagenes/87.png" alt="Imagen de Dewgong" title="Dewgong"></td>
               <td>Dewgong</td>
-              <td>Agua / Hielo</td>
+              <td><span class="tipo tipo-agua">Agua</span> / <span class="tipo tipo-hielo">Hielo</span></td>
               <td>#087</td>
             </tr>
             <tr>
               <td><img src="Imagenes/88.png" alt="Imagen de Grimer" title="Grimer"></td>
               <td>Grimer</td>
-              <td>Veneno</td>
+              <td><span class="tipo tipo-veneno">Veneno</span></td>
               <td>#088</td>
             </tr>
             <tr>
               <td><img src="Imagenes/89.png" alt="Imagen de Muk" title="Muk"></td>
               <td>Muk</td>
-              <td>Veneno</td>
+              <td><span class="tipo tipo-veneno">Veneno</span></td>
               <td>#089</td>
             </tr>
             <tr>
               <td><img src="Imagenes/90.png" alt="Imagen de Shellder" title="Shellder"></td>
               <td>Shellder</td>
-              <td>Agua</td>
+              <td><span class="tipo tipo-agua">Agua</span></td>
               <td>#090</td>
             </tr>
             <tr>
               <td><img src="Imagenes/91.png" alt="Imagen de Cloyster" title="Cloyster"></td>
               <td>Cloyster</td>
-              <td>Agua / Hielo</td>
+              <td><span class="tipo tipo-agua">Agua</span> / <span class="tipo tipo-hielo">Hielo</span></td>
               <td>#091</td>
             </tr>
             <tr>
               <td><img src="Imagenes/92.png" alt="Imagen de Gastly" title="Gastly"></td>
               <td>Gastly</td>
-              <td>Fantasma / Veneno</td>
+              <td><span class="tipo tipo-fantasma">Fantasma</span> / <span class="tipo tipo-veneno">Veneno</span></td>
               <td>#092</td>
             </tr>
             <tr>
               <td><img src="Imagenes/93.png" alt="Imagen de Haunter" title="Haunter"></td>
               <td>Haunter</td>
-              <td>Fantasma / Veneno</td>
+              <td><span class="tipo tipo-fantasma">Fantasma</span> / <span class="tipo tipo-veneno">Veneno</span></td>
               <td>#093</td>
             </tr>
             <tr>
               <td><img src="Imagenes/94.png" alt="Imagen de Gengar" title="Gengar"></td>
               <td>Gengar</td>
-              <td>Fantasma / Veneno</td>
+              <td><span class="tipo tipo-fantasma">Fantasma</span> / <span class="tipo tipo-veneno">Veneno</span></td>
               <td>#094</td> 
             </tr>
             <tr>
               <td><img src="Imagenes/95.png" alt="Imagen de Onix" title="Onix"></td>
               <td>Onix</td>
-              <td>Roca / Tierra</td>
+              <td><span class="tipo tipo-roca">Roca</span> / <span class="tipo tipo-tierra">Tierra</span></td>
               <td>#095</td>
             </tr>
             <tr>
               <td><img src="Imagenes/96.png" alt="Imagen de Drowzee" title="Drowzee"></td>
               <td>Drowzee</td>
-              <td>Psíquico</td>
+              <td><span class="tipo tipo-psiquico">Psíquico</span></td>
               <td>#096</td>
             </tr>
             <tr>
               <td><img src="Imagenes/97.png" alt="Imagen de Hypno" title="Hypno"></td>
               <td>Hypno</td>
-              <td>Psíquico</td>
+              <td><span class="tipo tipo-psiquico">Psíquico</span></td>
               <td>#097</td>
             </tr>
             <tr>
               <td><img src="Imagenes/98.png" alt="Imagen de Krabby" title="Krabby"></td>
               <td>Krabby</td>
-              <td>Agua</td>
+              <td><span class="tipo tipo-agua">Agua</span></td>
               <td>#098</td>
             </tr>
             <tr>
               <td><img src="Imagenes/99.png" alt="Imagen de Kingler" title="Kingler"></td>
               <td>Kingler</td>
-              <td>Agua</td>
+              <td><span class="tipo tipo-agua">Agua</span></td>
               <td>#099</td>
             </tr>
             <tr>
               <td><img src="Imagenes/100.png" alt="Imagen de Voltorb" title="Voltorb"></td>
               <td>Voltorb</td>
-              <td>Eléctrico</td>
+              <td><span class="tipo tipo-electrico">Eléctrico</span></td>
               <td>#100</td>
             </tr>
             <tr>
               <td><img src="Imagenes/101.png" alt="Imagen de Electrode" title="Electrode"></td>
               <td>Electrode</td>
-              <td>Eléctrico</td>
+              <td><span class="tipo tipo-electrico">Eléctrico</span></td>
               <td>#101</td>
             </tr>
             <tr>
               <td><img src="Imagenes/102.png" alt="Imagen de Exeggcute" title="Exeggcute"></td>
               <td>Exeggcute</td>
-              <td>Planta / Psíquico</td>
+              <td><span class="tipo tipo-planta">Planta</span> / <span class="tipo tipo-psiquico">Psíquico</span></td>
               <td>#102</td>
             </tr>
             <tr>
               <td><img src="Imagenes/103.png" alt="Imagen de Exeggutor" title="Exeggutor"></td>
               <td>Exeggutor</td>
-              <td>Planta / Psíquico</td>
+              <td><span class="tipo tipo-planta">Planta</span> / <span class="tipo tipo-psiquico">Psíquico</span></td>
               <td>#103</td>
             </tr>
             <tr>
               <td><img src="Imagenes/104.png" alt="Imagen de Cubone" title="Cubone"></td>
               <td>Cubone</td>
-              <td>Tierra</td>
+              <td><span class="tipo tipo-tierra">Tierra</span></td>
               <td>#104</td>
             </tr>
             <tr>
               <td><img src="Imagenes/105.png" alt="Imagen de Marowak" title="Marowak"></td>
               <td>Marowak</td>
-              <td>Tierra</td>
+              <td><span class="tipo tipo-tierra">Tierra</span></td>
               <td>#105</td>
             </tr>
             <tr>
               <td><img src="Imagenes/106.png" alt="Imagen de Hitmonlee" title="Hitmonlee"></td>
               <td>Hitmonlee</td>
-              <td>Lucha</td>
+              <td><span class="tipo tipo-lucha">Lucha</span></td>
               <td>#106</td>
             </tr>
             <tr>
               <td><img src="Imagenes/107.png" alt="Imagen de Hitmonchan" title="Hitmonchan"></td>
               <td>Hitmonchan</td>
-              <td>Lucha</td>
+              <td><span class="tipo tipo-lucha">Lucha</span></td>
               <td>#107</td>
             </tr>
             <tr>  
               <td><img src="Imagenes/108.png" alt="Imagen de Lickitung" title="Lickitung"></td>
               <td>Lickitung</td>
-              <td>Normal</td>
+              <td><span class="tipo tipo-normal">Normal</span></td>
               <td>#108</td>
             </tr>
             <tr>
               <td><img src="Imagenes/109.png" alt="Imagen de Koffing" title="Koffing"></td>
               <td>Koffing</td>
-              <td>Veneno</td>
+              <td><span class="tipo tipo-veneno">Veneno</span></td>
               <td>#109</td>
             </tr>
             <tr>  
             <td><img src="Imagenes/110.png" alt="Imagen de Weezing" title="Weezing"></td>
               <td>Weezing</td>
-              <td>Veneno</td>
+              <td><span class="tipo tipo-veneno">Veneno</span></td>
               <td>#110</td>
             </tr>
             <tr>
               <td><img src="Imagenes/111.png" alt="Imagen de Rhyhorn" title="Rhyhorn"></td>
               <td>Rhyhorn</td>
-              <td>Tierra / Roca</td>
+              <td><span class="tipo tipo-tierra">Tierra</span> / <span class="tipo tipo-roca">Roca</span></td>
               <td>#111</td>
             </tr> 
             <tr>
               <td><img src="Imagenes/112.png" alt="Imagen de Rhydon" title="Rhydon"></td>
               <td>Rhydon</td>
-              <td>Tierra / Roca</td>
+              <td><span class="tipo tipo-tierra">Tierra</span> / <span class="tipo tipo-roca">Roca</span></td>
               <td>#112</td>
             </tr>
             <tr>
               <td><img src="Imagenes/113.png" alt="Imagen de Chansey" title="Chansey"></td>
               <td>Chansey</td>
-              <td>Normal</td>
+              <td><span class="tipo tipo-normal">Normal</span></td>
               <td>#113</td>
             </tr>
             <tr>
               <td><img src="Imagenes/114.png" alt="Imagen de Tangela" title="Tangela"></td>
               <td>Tangela</td>
-              <td>Planta</td>
+              <td><span class="tipo tipo-planta">Planta</span></td>
               <td>#114</td>
             </tr>
             <tr>
               <td><img src="Imagenes/115.png" alt="Imagen de Kangaskhan" title="Kangaskhan"></td>
               <td>Kangaskhan</td>
-              <td>Normal</td>
+              <td><span class="tipo tipo-normal">Normal</span></td>
               <td>#115</td>
             </tr>
             <tr>
               <td><img src="Imagenes/116.png" alt="Imagen de Horsea" title="Horsea"></td>
               <td>Horsea</td>
-              <td>Agua</td>
+              <td><span class="tipo tipo-agua">Agua</span></td>
               <td>#116</td>
             </tr>
             <tr>
               <td><img src="Imagenes/117.png" alt="Imagen de Seadra" title="Seadra"></td>
               <td>Seadra</td>
-              <td>Agua</td>
+              <td><span class="tipo tipo-agua">Agua</span></td>
               <td>#117</td>
             </tr>
             <tr>
               <td><img src="Imagenes/118.png" alt="Imagen de Goldeen" title="Goldeen"></td>
               <td>Goldeen</td>
-              <td>Agua</td>
+              <td><span class="tipo tipo-agua">Agua</span></td>
               <td>#118</td>
             </tr>
             <tr>
               <td><img src="Imagenes/119.png" alt="Imagen de Seaking" title="Seaking"></td>
               <td>Seaking</td>
-              <td>Agua</td>
+              <td><span class="tipo tipo-agua">Agua</span></td>
               <td>#119</td>
             </tr>
             <tr>
               <td><img src="Imagenes/120.png" alt="Imagen de Staryu" title="Staryu"></td>
               <td>Staryu</td>
-              <td>Agua</td>
+              <td><span class="tipo tipo-agua">Agua</span></td>
               <td>#120</td>
             </tr>
             <tr>
               <td><img src="Imagenes/121.png" alt="Imagen de Starmie" title="Starmie"></td>
               <td>Starmie</td>
-              <td>Agua / Psíquico</td>
+              <td><span class="tipo tipo-agua">Agua</span> / <span class="tipo tipo-psiquico">Psíquico</span></td>
               <td>#121</td>
             </tr>
             <tr>
               <td><img src="Imagenes/122.png" alt="Imagen de Mr. Mime" title="Mr. Mime"></td>
               <td>Mr. Mime</td>
-              <td>Psíquico / Hada</td>
+              <td><span class="tipo tipo-psiquico">Psíquico</span> / <span class="tipo tipo-hada">Hada</span></td>
               <td>#122</td>
             </tr>
             <tr>
               <td><img src="Imagenes/123.png" alt="Imagen de Scyther" title="Scyther"></td>
               <td>Scyther</td>
-              <td>Bicho / Volador</td>
+              <td><span class="tipo tipo-bicho">Bicho</span> / <span class="tipo tipo-volador">Volador</span></td>
               <td>#123</td>
             </tr>
             <tr>
               <td><img src="Imagenes/124.png" alt="Imagen de Jynx" title="Jynx"></td>
               <td>Jynx</td>
-              <td>Hielo / Psíquico</td>
+              <td><span class="tipo tipo-hielo">Hielo</span> / <span class="tipo tipo-psiquico">Psíquico</span></td>
               <td>#124</td>
             </tr>
             <tr>
               <td><img src="Imagenes/125.png" alt="Imagen de Electabuzz" title="Electabuzz"></td>
               <td>Electabuzz</td>
-              <td>Eléctrico</td>
+              <td><span class="tipo tipo-electrico">Eléctrico</span></td>
               <td>#125</td>
             </tr>
             <tr>
               <td><img src="Imagenes/126.png" alt="Imagen de Magmar" title="Magmar"></td>
               <td>Magmar</td>
-              <td>Fuego</td>
+              <td><span class="tipo tipo-fuego">Fuego</span></td>
               <td>#126</td>
             </tr>
             <tr>
               <td><img src="Imagenes/127.png" alt="Imagen de Pinsir" title="Pinsir"></td>
               <td>Pinsir</td>
-              <td>Bicho</td>
+              <td><span class="tipo tipo-bicho">Bicho</span></td>
               <td>#127</td>
             </tr>
             <tr>
               <td><img src="Imagenes/128.png" alt="Imagen de Tauros" title="Tauros"></td>
               <td>Tauros</td>
-              <td>Normal</td>
+              <td><span class="tipo tipo-normal">Normal</span></td>
               <td>#128</td>
             </tr>
             <tr>
               <td><img src="Imagenes/129.png" alt="Imagen de Magikarp" title="Magikarp"></td>
               <td>Magikarp</td>
-              <td>Agua</td>
+              <td><span class="tipo tipo-agua">Agua</span></td>
               <td>#129</td>
             </tr>
             <tr>
               <td><img src="Imagenes/130.png" alt="Imagen de Gyarados" title="Gyarados"></td>
               <td>Gyarados</td>
-              <td>Agua / Volador</td>
+              <td><span class="tipo tipo-agua">Agua</span> / <span class="tipo tipo-volador">Volador</span></td>
               <td>#130</td>
             </tr>
             <tr>
               <td><img src="Imagenes/131.png" alt="Imagen de Lapras" title="Lapras"></td>
               <td>Lapras</td>
-              <td>Agua / Hielo</td>
+              <td><span class="tipo tipo-agua">Agua</span> / <span class="tipo tipo-hielo">Hielo</span></td>
               <td>#131</td>
             </tr>
             <tr>
               <td><img src="Imagenes/132.png" alt="Imagen de Ditto" title="Ditto"></td>
               <td>Ditto</td>
-              <td>Normal</td>
+              <td><span class="tipo tipo-normal">Normal</span></td>
               <td>#132</td>
             </tr>
             <tr>
               <td><img src="Imagenes/133.png" alt="Imagen de Eevee" title="Eevee"></td>
               <td>Eevee</td>
-              <td>Normal</td>
+              <td><span class="tipo tipo-normal">Normal</span></td>
               <td>#133</td>
             </tr>
             <tr>
               <td><img src="Imagenes/134.png" alt="Imagen de Vaporeon" title="Vaporeon"></td>
               <td>Vaporeon</td>
-              <td>Agua</td>
+              <td><span class="tipo tipo-agua">Agua</span></td>
               <td>#134</td>
             </tr>
             <tr>
               <td><img src="Imagenes/135.png" alt="Imagen de Jolteon" title="Jolteon"></td>
               <td>Jolteon</td>
-              <td>Eléctrico</td>
+              <td><span class="tipo tipo-electrico">Eléctrico</span></td>
               <td>#135</td>
             </tr>
             <tr>
               <td><img src="Imagenes/136.png" alt="Imagen de Flareon" title="Flareon"></td>
               <td>Flareon</td>
-              <td>Fuego</td>
+              <td><span class="tipo tipo-fuego">Fuego</span></td>
               <td>#136</td>
             </tr>
             <tr>
               <td><img src="Imagenes/137.png" alt="Imagen de Porygon" title="Porygon"></td>
               <td>Porygon</td>
-              <td>Normal</td>
+              <td><span class="tipo tipo-normal">Normal</span></td>
               <td>#137</td>
             </tr>
             <tr>
               <td><img src="Imagenes/138.png" alt="Imagen de Omanyte" title="Omanyte"></td>
               <td>Omanyte</td>
-              <td>Roca / Agua</td>
+              <td><span class="tipo tipo-roca">Roca</span> / <span class="tipo tipo-agua">Agua</span></td>
               <td>#138</td>
             </tr>
             <tr>
               <td><img src="Imagenes/139.png" alt="Imagen de Omastar" title="Omastar"></td>
               <td>Omastar</td>
-              <td>Roca / Agua</td>
+              <td><span class="tipo tipo-roca">Roca</span> / <span class="tipo tipo-agua">Agua</span></td>
               <td>#139</td>
             </tr>
             <tr>
               <td><img src="Imagenes/140.png" alt="Imagen de Kabuto" title="Kabuto"></td>
               <td>Kabuto</td>
-              <td>Roca / Agua</td>
+              <td><span class="tipo tipo-roca">Roca</span> / <span class="tipo tipo-agua">Agua</span></td>
               <td>#140</td>
             </tr>
             <tr>
               <td><img src="Imagenes/141.png" alt="Imagen de Kabutops" title="Kabutops"></td>
               <td>Kabutops</td>
-              <td>Roca / Agua</td>
+              <td><span class="tipo tipo-roca">Roca</span> / <span class="tipo tipo-agua">Agua</span></td>
               <td>#141</td>
             </tr>
             <tr>
               <td><img src="Imagenes/142.png" alt="Imagen de Aerodactyl" title="Aerodactyl"></td>
               <td>Aerodactyl</td>
-              <td>Roca / Volador</td>
+              <td><span class="tipo tipo-roca">Roca</span> / <span class="tipo tipo-volador">Volador</span></td>
               <td>#142</td>
             </tr>
             <tr>  
               <td><img src="Imagenes/143.png" alt="Imagen de Snorlax" title="Snorlax"></td>
               <td>Snorlax</td>
-              <td>Normal</td>
+              <td><span class="tipo tipo-normal">Normal</span></td>
               <td>#143</td>
             </tr>
             <tr>
               <td><img src="Imagenes/144.png" alt="Imagen de Articuno" title="Articuno"></td>
               <td>Articuno</td>
-              <td>Hielo / Volador</td>
+              <td><span class="tipo tipo-hielo">Hielo</span> / <span class="tipo tipo-volador">Volador</span></td>
               <td>#144</td>
             </tr>
             <tr>
               <td><img src="Imagenes/145.png" alt="Imagen de Zapdos" title="Zapdos"></td>
               <td>Zapdos</td>
-              <td>Eléctrico / Volador</td>
+              <td><span class="tipo tipo-electrico">Eléctrico</span> / <span class="tipo tipo-volador">Volador</span></td>
               <td>#145</td>
             </tr>
             <tr>
               <td><img src="Imagenes/146.png" alt="Imagen de Moltres" title="Moltres"></td>
               <td>Moltres</td>
-              <td>Fuego / Volador</td>
+              <td><span class="tipo tipo-fuego">Fuego</span> / <span class="tipo tipo-volador">Volador</span></td>
               <td>#146</td>
             </tr>
             <tr>
               <td><img src="Imagenes/147.png" alt="Imagen de Dratini" title="Dratini"></td>
               <td>Dratini</td>
-              <td>Dragón</td>
+              <td><span class="tipo tipo-dragon">Dragón</span></td>
               <td>#147</td>
             </tr>
             <tr>
               <td><img src="Imagenes/148.png" alt="Imagen de Dragonair" title="Dragonair"></td>
               <td>Dragonair</td>
-              <td>Dragón</td>
+              <td><span class="tipo tipo-dragon">Dragón</span></td>
               <td>#148</td>
             </tr>
             <tr>
               <td><img src="Imagenes/149.png" alt="Imagen de Dragonite" title="Dragonite"></td>
               <td>Dragonite</td>
-              <td>Dragón / Volador</td>
+              <td><span class="tipo tipo-dragon">Dragón</span> / <span class="tipo tipo-volador">Volador</span></td>
               <td>#149</td>
             </tr>
             <tr>
               <td><img src="Imagenes/150.png" alt="Imagen de Mewtwo" title="Mewtwo"></td>
               <td>Mewtwo</td>
-              <td>Psíquico</td>
+              <td><span class="tipo tipo-psiquico">Psíquico</span></td>
               <td>#150</td>
             </tr>
             <tr>
               <td><img src="Imagenes/151.png" alt="Imagen de Mew" title="Mew"></td>
               <td>Mew</td>
-              <td>Psíquico</td>
+              <td><span class="tipo tipo-psiquico">Psíquico</span></td>
               <td>#151</td>
             </tr>
             <!--fin de la tabla-->
           </tbody>
         </table>
+          </div>
       </article>
+      </div>
+
+      <a class="boton-subida" href="#principio" aria-label="Volver al principio de la página"><img src="Imagenes/up-arrow.png" alt=""></a>
     </section>
   </main>
-  <aside class="info-curiosidad"">
-    <h2>Pikachu</h2>
-    <img src="https://static.wikia.nocookie.net/smosh/images/e/e1/025Pikachu_OS_anime_4.png/revision/latest/scale-to-width-down/1200?cb=20140725081329" alt="Imagen de pikachu" width="200" height="200">
-    <p>Pikachu es un Pokémon de tipo eléctrico introducido en la primera generación. Es conocido por su apariencia adorable y su capacidad para generar electricidad. Pikachu es el Pokémon más icónico de la franquicia y es la mascota oficial de Pokémon.</p>
-    <table>
-      <tr>
-        <th>Tipo</th>
-        <th>Altura</th>
-        <th>Peso</th>
-        <th>Generación</th>
-        <th>Compañero</th>
-      </tr>
-      <tr>
-        <td>Eléctrico</td>
-        <td>0.4 m</td>
-        <td>6 kg</td>
-        <td>1</td>
-        <td>Ash Ketchum</td>
-      </tr>
-    </table>
+  <aside>
+    <div>
+      <h2>Pikachu</h2>
+      <img src="https://static.wikia.nocookie.net/smosh/images/e/e1/025Pikachu_OS_anime_4.png/revision/latest/scale-to-width-down/1200?cb=20140725081329" alt="Imagen de pikachu" width="200" height="200">
+      <p>Pikachu es un Pokémon de tipo eléctrico introducido en la primera generación. Es conocido por su apariencia adorable y su capacidad para generar electricidad. Pikachu es el Pokémon más icónico de la franquicia y es la mascota oficial de Pokémon.</p>
+    </div>
   </aside>
+  </div>
   <footer>
     <p>Todas las imágenes son de Pokémon © Nintendo / Creatures Inc. / GAME FREAK inc. Obtenidas del repositorio PokeAPI/sprites (github.com/PokeAPI/sprites). Uso educativo, sin ánimo de lucro.</p>
     <h3>Aviso legal y privacidad</h3>
