@@ -298,7 +298,7 @@ iframe {
 }
 
 .pokemons-iniciales article.verde {
-  background-image: url(/Imagenes/fondo_planta.svg);
+  background-image: url("../Imagenes/fondo_planta.svg");
   background-position: center ;
   background-size: cover;
 }
@@ -322,13 +322,13 @@ iframe {
 }
 
 .pokemons-iniciales article.rojo {
-  background-image: url(/Imagenes/fondo_fuego.svg);
+  background-image: url("../Imagenes/fondo_fuego.svg");
   background-position: center;
   background-size: cover;
 }
 
 .pokemons-iniciales article.azul {
-  background-image: url(/Imagenes/fondo_agua.svg);
+  background-image: url("../Imagenes/fondo_agua.svg");
   background-position: center;
   background-size: cover;
 }
@@ -671,25 +671,25 @@ audio {
 
 
 .articuno {
-  background-image: url(/Imagenes/articuno.svg);
+  background-image: url("../Imagenes/articuno.svg");
   background-position: center;
   background-size: cover;
 }
 
 .zapdos {
-  background-image: url(/Imagenes/zapdos.svg);
+  background-image: url("../Imagenes/zapdos.svg");
   background-position: center;
   background-size: cover;
 }
 
 .moltres {
-  background-image: url(/Imagenes/moltres.svg);
+  background-image: url("../Imagenes/moltres.svg");
   background-position: center;
   background-size: cover;
 }
 
 .mewtwo {
-  background-image: url(/Imagenes/mewtwo.svg);
+  background-image: url("../Imagenes/mewtwo.svg");
   background-position: center;
   background-size: cover;
 }
