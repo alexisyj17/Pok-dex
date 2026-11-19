@@ -143,10 +143,18 @@ img {
   image-rendering: pixelated;
 }
 
+
+section>h2 {
+  background-image: linear-gradient(to left, #fff, #f009);
+  padding: 1rem;
+  text-align: center;
+  box-shadow: var(--sombra-caja);
+  border-radius: var(--radio-bordes);
+}
+
 /*Todas las paginas*/
 
 /*Index*/
-
 ol {
   font-family: "Acme", sans-serif;
   font-size: 1.1em;
@@ -282,19 +290,18 @@ iframe {
 
 .boton-subida {
   position: fixed;
-  right: 1.25rem;
-  bottom: 1.25rem;
+  bottom: 20px;
   z-index: 2;
   display: flex;
-  width: 3rem;
-  height: 3rem;
+  width: 50px;
+  height: 50px;
   align-items: center;
   justify-content: center;
   background: var(--color-principal);
   border: 2px solid #fff;
   border-radius: 50%;
   box-shadow: var(--sombra-caja);
-  transition: transform 0.2s, background-color 0.2s;
+  transition: transform 0.2s;
 }
 
 .boton-subida:hover {
@@ -563,6 +570,11 @@ audio {
   box-shadow: var(--sombra-caja);
 }
 
+.titulo-cartas {
+  grid-column: 1 / -1;
+}
+
+
 
 .contenedor article {
   display: flex;
@@ -655,6 +667,12 @@ audio {
 }
 
 
+.title-legendarios {
+  background: var(--fondo-caja);
+  margin: 1rem;
+  grid-column: 1/-1;
+}
+
 .legendarios {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -741,6 +759,7 @@ audio {
 .contenedor2 {
   display: grid;
   grid-template-areas:
+    "title title"
     "content content"
     "formulario feed";
   grid-template-columns: minmax(0, 2fr) minmax(220px, 1fr);
@@ -749,7 +768,11 @@ audio {
   align-items: start;
 }
 
-.contenedor2 article:first-child {
+.contenedor2 > h2 {
+  grid-area: title;
+}
+
+.contenedor2 > article:first-of-type {
   display: flex;
   flex-direction: column;
   background: #fff;
@@ -792,9 +815,9 @@ button {
   border: none;
   padding: 10px 24px;
   border-radius: 8px;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 0.9rem;
-  box-shadow: 0 4px 14px rgba(239, 239, 248, 0.264);
+  box-shadow: 0 4px 14px #0009;
   transition: all 0.2s ease;
   width: 30%;
   align-self: center;
@@ -803,7 +826,6 @@ button {
 button:hover {
   opacity: 0.88;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(200, 49, 49, 0.45);
 }
 
 button:active {
@@ -869,7 +891,10 @@ button:active {
 
 
   footer > div {
+    background: #f002;
+    border-radius: var(--radio-bordes);
     width: 100%;
+    overflow-wrap: anywhere;
   }
 
 
@@ -932,6 +957,7 @@ button:active {
 
     .contenedor2 {
     grid-template-areas:
+      "title"
       "content"
       "formulario"
       "feed";
